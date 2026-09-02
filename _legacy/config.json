@@ -1,0 +1,9 @@
+{
+  "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY",
+  "JWT_SECRET": "antigravity_secret_1620240320",
+  "DB_DRIVER": "mysql",
+  "DB_HOST": "127.0.0.1",
+  "DB_USER": "root",
+  "DB_PASS": "root",
+  "DB_NAME": "aegis_x_dev"
+}

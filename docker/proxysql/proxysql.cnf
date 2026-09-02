@@ -1,0 +1,112 @@
+datadir="/var/lib/proxysql"
+
+admin_variables=
+{
+    admin_credentials="admin:aegis_proxysql_admin"
+    mysql_ifaces="0.0.0.0:6032"
+    refresh_interval=2000
+}
+
+mysql_variables=
+{
+    threads=16
+    max_connections=50000        # Total pooled connections ProxySQL manages
+    default_query_delay=0
+    default_query_timeout=36000000
+    have_compress=true
+    poll_timeout=2000
+    interfaces="0.0.0.0:6033"
+    default_schema="information_schema"
+    stacksize=1048576
+    server_version="8.4.0"
+    connect_timeout_server=3000
+    monitor_username="proxysql_monitor"
+    monitor_password="monitor_pass"
+    monitor_history=600000
+    monitor_connect_interval=60000
+    monitor_ping_interval=10000
+    monitor_read_only_interval=1500
+    monitor_read_only_timeout=500
+    ping_interval_server_msec=120000
+    ping_timeout_server=500
+    commands_stats=true
+    sessions_sort=true
+    connect_retries_on_failure=10
+
+    # Connection Pool settings
+    # Each hostgroup keeps 50 persistent connections open.
+    # When burst hits (exam day), ProxySQL multiplexes 50k client
+    # connections onto this pool transparently.
+    connection_max_age_ms=0
+}
+
+# ── Backend MySQL servers ───────────────────────────────────────────
+mysql_servers=
+(
+    # Hostgroup 0 = WRITE (Master)
+    {
+        address="mysql-master"
+        port=3306
+        hostgroup=0
+        status="ONLINE"
+        weight=1
+        compression=0
+        max_connections=200
+        max_replication_lag=0
+    },
+    # Hostgroup 1 = READ (Replica)
+    {
+        address="mysql-replica"
+        port=3306
+        hostgroup=1
+        status="ONLINE"
+        weight=1
+        compression=0
+        max_connections=500
+        max_replication_lag=5
+    },
+    # Replica also in hostgroup 0 with lower weight (failover for writes)
+    {
+        address="mysql-replica"
+        port=3306
+        hostgroup=0
+        status="ONLINE"
+        weight=0
+        compression=0
+        max_connections=100
+        max_replication_lag=5
+    }
+)
+
+# ── MySQL users ─────────────────────────────────────────────────────
+mysql_users=
+(
+    {
+        username="aegis"
+        password="aegispass"
+        default_hostgroup=0    # default to write group
+        max_connections=50000
+        active=1
+    }
+)
+
+# ── Query routing rules ─────────────────────────────────────────────
+# SELECT queries (reads) → hostgroup 1 (Replica)
+# Everything else        → hostgroup 0 (Master)
+mysql_query_rules=
+(
+    {
+        rule_id=1
+        active=1
+        match_digest="^SELECT .* FOR UPDATE"
+        destination_hostgroup=0    # SELECT FOR UPDATE → Master
+        apply=1
+    },
+    {
+        rule_id=2
+        active=1
+        match_digest="^SELECT"
+        destination_hostgroup=1    # All other SELECTs → Replica
+        apply=1
+    }
+)

@@ -1,0 +1,232 @@
+# ═══════════════════════════════════════════════════════════════════
+#  Aegis-X — docker-compose.yml (Production-grade local stack)
+#
+#  Services:
+#    nginx          → Load Balancer (port 80/443)
+#    app            → Laravel Octane / Swoole (3 replicas in prod)
+#    horizon        → Queue Workers (Horizon)
+#    scheduler      → Artisan Scheduler
+#    redis-master   → Redis primary
+#    redis-replica  → Redis replica
+#    proxysql       → MySQL Connection Pooler (port 6033)
+#    mysql-master   → MySQL primary (writes)
+#    mysql-replica  → MySQL replica (reads)
+# ═══════════════════════════════════════════════════════════════════
+
+services:
+
+  # ── Nginx Load Balancer ─────────────────────────────────────────
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: aegis-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./public:/var/www/html/public:ro
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    restart: unless-stopped
+
+  # ── Application (Octane / Swoole) ──────────────────────────────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: aegis-x:latest
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+    env_file:
+      - .env.production
+    environment:
+      OCTANE_SERVER: swoole
+      OCTANE_WORKERS: auto
+    depends_on:
+      redis-master:
+        condition: service_healthy
+      mysql-master:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:8000/up"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # ── Horizon (Queue Workers) ─────────────────────────────────────
+  horizon:
+    image: aegis-x:latest
+    container_name: aegis-horizon
+    command: ["php", "artisan", "horizon"]
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 2G
+    env_file:
+      - .env.production
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    restart: unless-stopped
+
+  # ── Scheduler (Artisan) ─────────────────────────────────────────
+  scheduler:
+    image: aegis-x:latest
+    container_name: aegis-scheduler
+    command: ["/bin/sh", "-c", "while true; do php artisan schedule:run --verbose --no-interaction; sleep 60; done"]
+    env_file:
+      - .env.production
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    restart: unless-stopped
+
+  # ── Redis Master ────────────────────────────────────────────────
+  redis-master:
+    image: redis:7.2-alpine
+    container_name: aegis-redis-master
+    command: >
+      redis-server
+      --requirepass ${REDIS_PASSWORD:-aegisredis}
+      --maxmemory 2gb
+      --maxmemory-policy allkeys-lru
+      --save 60 1000
+      --appendonly yes
+    volumes:
+      - redis-master-data:/data
+    networks:
+      - aegis-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-aegisredis}", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  # ── Redis Replica ───────────────────────────────────────────────
+  redis-replica:
+    image: redis:7.2-alpine
+    container_name: aegis-redis-replica
+    command: >
+      redis-server
+      --requirepass ${REDIS_PASSWORD:-aegisredis}
+      --replicaof redis-master 6379
+      --masterauth ${REDIS_PASSWORD:-aegisredis}
+      --maxmemory 1gb
+      --maxmemory-policy allkeys-lru
+    depends_on:
+      redis-master:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    restart: unless-stopped
+
+  # ── ProxySQL (MySQL Connection Pooler) ──────────────────────────
+  proxysql:
+    image: proxysql/proxysql:2.6
+    container_name: aegis-proxysql
+    ports:
+      - "6033:6033"   # MySQL interface (app connects here)
+      - "6032:6032"   # Admin interface
+    volumes:
+      - ./docker/proxysql/proxysql.cnf:/etc/proxysql.cnf:ro
+    depends_on:
+      mysql-master:
+        condition: service_healthy
+      mysql-replica:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    restart: unless-stopped
+
+  # ── MySQL Master (Writes) ───────────────────────────────────────
+  mysql-master:
+    image: mysql:8.4
+    container_name: aegis-mysql-master
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-aegisroot}
+      MYSQL_DATABASE: ${DB_DATABASE:-aegis_x}
+      MYSQL_USER: ${DB_USERNAME:-aegis}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-aegispass}
+    command: >
+      --server-id=1
+      --log-bin=mysql-bin
+      --binlog-format=ROW
+      --gtid-mode=ON
+      --enforce-gtid-consistency=ON
+      --max-connections=500
+      --innodb-buffer-pool-size=2G
+    volumes:
+      - mysql-master-data:/var/lib/mysql
+      - ./docker/mysql/master.cnf:/etc/mysql/conf.d/master.cnf:ro
+    networks:
+      - aegis-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-aegisroot}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # ── MySQL Replica (Reads) ───────────────────────────────────────
+  mysql-replica:
+    image: mysql:8.4
+    container_name: aegis-mysql-replica
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-aegisroot}
+      MYSQL_DATABASE: ${DB_DATABASE:-aegis_x}
+      MYSQL_USER: ${DB_USERNAME:-aegis}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-aegispass}
+    command: >
+      --server-id=2
+      --relay-log=relay-bin
+      --gtid-mode=ON
+      --enforce-gtid-consistency=ON
+      --read-only=ON
+      --max-connections=1000
+      --innodb-buffer-pool-size=2G
+    volumes:
+      - mysql-replica-data:/var/lib/mysql
+      - ./docker/mysql/replica.cnf:/etc/mysql/conf.d/replica.cnf:ro
+    depends_on:
+      mysql-master:
+        condition: service_healthy
+    networks:
+      - aegis-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-aegisroot}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+# ── Volumes ─────────────────────────────────────────────────────────
+volumes:
+  redis-master-data:
+  mysql-master-data:
+  mysql-replica-data:
+
+# ── Networks ─────────────────────────────────────────────────────────
+networks:
+  aegis-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16

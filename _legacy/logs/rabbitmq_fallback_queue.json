@@ -1,0 +1,3513 @@
+[
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:04:27"
+        },
+        "timestamp": "2026-07-22 17:04:27"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:04:29"
+        },
+        "timestamp": "2026-07-22 17:04:29"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:04:36"
+        },
+        "timestamp": "2026-07-22 17:04:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:04:36"
+        },
+        "timestamp": "2026-07-22 17:04:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:05:04"
+        },
+        "timestamp": "2026-07-22 17:05:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:05:49"
+        },
+        "timestamp": "2026-07-22 17:05:49"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:05:51"
+        },
+        "timestamp": "2026-07-22 17:05:51"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:05:58"
+        },
+        "timestamp": "2026-07-22 17:05:58"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:06:08"
+        },
+        "timestamp": "2026-07-22 17:06:08"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:06:11"
+        },
+        "timestamp": "2026-07-22 17:06:11"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:06:53"
+        },
+        "timestamp": "2026-07-22 17:06:53"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:06:57"
+        },
+        "timestamp": "2026-07-22 17:06:57"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:07:50"
+        },
+        "timestamp": "2026-07-22 17:07:50"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:07:51"
+        },
+        "timestamp": "2026-07-22 17:07:51"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:08:11"
+        },
+        "timestamp": "2026-07-22 17:08:11"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:08:18"
+        },
+        "timestamp": "2026-07-22 17:08:18"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:08:53"
+        },
+        "timestamp": "2026-07-22 17:08:53"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:08:58"
+        },
+        "timestamp": "2026-07-22 17:08:58"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:09:01"
+        },
+        "timestamp": "2026-07-22 17:09:01"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:09:21"
+        },
+        "timestamp": "2026-07-22 17:09:21"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:10:04"
+        },
+        "timestamp": "2026-07-22 17:10:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:10:07"
+        },
+        "timestamp": "2026-07-22 17:10:07"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:11:30"
+        },
+        "timestamp": "2026-07-22 17:11:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:11:36"
+        },
+        "timestamp": "2026-07-22 17:11:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:11:36"
+        },
+        "timestamp": "2026-07-22 17:11:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:12:10"
+        },
+        "timestamp": "2026-07-22 17:12:10"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:11"
+        },
+        "timestamp": "2026-07-22 17:12:11"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:12"
+        },
+        "timestamp": "2026-07-22 17:12:12"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:13"
+        },
+        "timestamp": "2026-07-22 17:12:13"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:15"
+        },
+        "timestamp": "2026-07-22 17:12:15"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:12:15"
+        },
+        "timestamp": "2026-07-22 17:12:15"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:16"
+        },
+        "timestamp": "2026-07-22 17:12:16"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:17"
+        },
+        "timestamp": "2026-07-22 17:12:17"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-22 17:12:18"
+        },
+        "timestamp": "2026-07-22 17:12:18"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:18"
+        },
+        "timestamp": "2026-07-22 17:12:18"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:12:19"
+        },
+        "timestamp": "2026-07-22 17:12:19"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:20:00"
+        },
+        "timestamp": "2026-07-22 17:20:00"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:04"
+        },
+        "timestamp": "2026-07-22 17:20:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:20:05"
+        },
+        "timestamp": "2026-07-22 17:20:05"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:06"
+        },
+        "timestamp": "2026-07-22 17:20:06"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:09"
+        },
+        "timestamp": "2026-07-22 17:20:09"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:20:10"
+        },
+        "timestamp": "2026-07-22 17:20:10"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:12"
+        },
+        "timestamp": "2026-07-22 17:20:12"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:15"
+        },
+        "timestamp": "2026-07-22 17:20:15"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:17"
+        },
+        "timestamp": "2026-07-22 17:20:17"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:20:17"
+        },
+        "timestamp": "2026-07-22 17:20:17"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-22 17:20:18"
+        },
+        "timestamp": "2026-07-22 17:20:18"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:18"
+        },
+        "timestamp": "2026-07-22 17:20:18"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:20:19"
+        },
+        "timestamp": "2026-07-22 17:20:19"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:05"
+        },
+        "timestamp": "2026-07-22 17:21:05"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:10"
+        },
+        "timestamp": "2026-07-22 17:21:10"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:15"
+        },
+        "timestamp": "2026-07-22 17:21:15"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:20"
+        },
+        "timestamp": "2026-07-22 17:21:20"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:25"
+        },
+        "timestamp": "2026-07-22 17:21:25"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:28"
+        },
+        "timestamp": "2026-07-22 17:21:28"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:30"
+        },
+        "timestamp": "2026-07-22 17:21:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"\u0627\u0644\u0633\u0637\u0644 \u0643\u0627\u0645\u0644 \u0635\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:31"
+        },
+        "timestamp": "2026-07-22 17:21:31"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:32"
+        },
+        "timestamp": "2026-07-22 17:21:32"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:35"
+        },
+        "timestamp": "2026-07-22 17:21:35"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:38"
+        },
+        "timestamp": "2026-07-22 17:21:38"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-22 17:21:40"
+        },
+        "timestamp": "2026-07-22 17:21:40"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:40"
+        },
+        "timestamp": "2026-07-22 17:21:40"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:42"
+        },
+        "timestamp": "2026-07-22 17:21:42"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-22 17:21:42"
+        },
+        "timestamp": "2026-07-22 17:21:42"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:42"
+        },
+        "timestamp": "2026-07-22 17:21:42"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-22 17:21:43"
+        },
+        "timestamp": "2026-07-22 17:21:43"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Blocked Keyboard Shortcut Attempt",
+            "details": "Blocked key: r",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:53:31"
+        },
+        "timestamp": "2026-07-24 14:53:31"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Blocked Keyboard Shortcut Attempt",
+            "details": "Blocked key: r",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:53:32"
+        },
+        "timestamp": "2026-07-24 14:53:32"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Blocked Keyboard Shortcut Attempt",
+            "details": "Blocked key: R",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:53:33"
+        },
+        "timestamp": "2026-07-24 14:53:33"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:53:35"
+        },
+        "timestamp": "2026-07-24 14:53:35"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:53:38"
+        },
+        "timestamp": "2026-07-24 14:53:38"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:53:38"
+        },
+        "timestamp": "2026-07-24 14:53:38"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:19"
+        },
+        "timestamp": "2026-07-24 14:55:19"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:24"
+        },
+        "timestamp": "2026-07-24 14:55:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:29"
+        },
+        "timestamp": "2026-07-24 14:55:29"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:34"
+        },
+        "timestamp": "2026-07-24 14:55:34"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:39"
+        },
+        "timestamp": "2026-07-24 14:55:39"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (1\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:55:42"
+        },
+        "timestamp": "2026-07-24 14:55:42"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (2\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:55:44"
+        },
+        "timestamp": "2026-07-24 14:55:44"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:44"
+        },
+        "timestamp": "2026-07-24 14:55:44"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:49"
+        },
+        "timestamp": "2026-07-24 14:55:49"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"\u0639\u0627\u0648\u0632\u0647 \u0642\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:55:51"
+        },
+        "timestamp": "2026-07-24 14:55:51"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:55:51"
+        },
+        "timestamp": "2026-07-24 14:55:51"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:54"
+        },
+        "timestamp": "2026-07-24 14:55:54"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:55:56"
+        },
+        "timestamp": "2026-07-24 14:55:56"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:55:59"
+        },
+        "timestamp": "2026-07-24 14:55:59"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0627\u0648 \u064a\u062a\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:01"
+        },
+        "timestamp": "2026-07-24 14:56:01"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:01"
+        },
+        "timestamp": "2026-07-24 14:56:01"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:04"
+        },
+        "timestamp": "2026-07-24 14:56:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:09"
+        },
+        "timestamp": "2026-07-24 14:56:09"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:09"
+        },
+        "timestamp": "2026-07-24 14:56:09"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0627\u0648\u062c\u062f \u0642\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:10"
+        },
+        "timestamp": "2026-07-24 14:56:10"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:14"
+        },
+        "timestamp": "2026-07-24 14:56:14"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0627\u0648\u062c\u062f \u0642\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:16"
+        },
+        "timestamp": "2026-07-24 14:56:16"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:19"
+        },
+        "timestamp": "2026-07-24 14:56:19"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:24"
+        },
+        "timestamp": "2026-07-24 14:56:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (3\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:29"
+        },
+        "timestamp": "2026-07-24 14:56:29"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:29"
+        },
+        "timestamp": "2026-07-24 14:56:29"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Luminance Violation",
+            "details": "\u0625\u0646\u0630\u0627\u0631 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0634\u0627\u0634\u0629 \u0625\u0636\u0627\u0641\u064a\u0629 (1\/5): \u062a\u063a\u064a\u0631 \u0645\u0641\u0627\u062c\u0626 \u0641\u064a \u0625\u0636\u0627\u0621\u0629 \u0627\u0644\u0648\u062c\u0647 (\u0627\u062d\u062a\u0645\u0627\u0644\u064a\u0629 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0647\u0627\u062a\u0641\/\u0634\u0627\u0634\u0629 \u0625\u0636\u0627\u0641\u064a\u0629)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:30"
+        },
+        "timestamp": "2026-07-24 14:56:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (4\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:31"
+        },
+        "timestamp": "2026-07-24 14:56:31"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (5\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:33"
+        },
+        "timestamp": "2026-07-24 14:56:33"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 14:56:34"
+        },
+        "timestamp": "2026-07-24 14:56:34"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Fatal Violation",
+            "details": "\u0625\u0646\u0647\u0627\u0621 \u0627\u0644\u0627\u0645\u062a\u062d\u0627\u0646 \u0642\u0633\u0631\u064a\u0627\u064b \u0644\u062a\u062e\u0637\u064a \u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0642\u0635\u0649 \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 14:56:35"
+        },
+        "timestamp": "2026-07-24 14:56:35"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-24 14:56:38"
+        },
+        "timestamp": "2026-07-24 14:56:38"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:00:32"
+        },
+        "timestamp": "2026-07-24 15:00:32"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"\u0627\u0648\u062c\u062f \u0642\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:00:36"
+        },
+        "timestamp": "2026-07-24 15:00:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:00:37"
+        },
+        "timestamp": "2026-07-24 15:00:37"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:00:38"
+        },
+        "timestamp": "2026-07-24 15:00:38"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0642\u064a\u0645\u0647 \u0627\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:00:40"
+        },
+        "timestamp": "2026-07-24 15:00:40"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:00:41"
+        },
+        "timestamp": "2026-07-24 15:00:41"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:00:42"
+        },
+        "timestamp": "2026-07-24 15:00:42"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0627\u0648\u062c\u0647 \u0642\u064a\u0645\u0647 \u0627\u0648\u062c\u062f \u0642\u064a\u0645\u0647 \u0627\u0648\u062c\u062f \u0642\u064a\u0645\u0647 \u0627\u0648\u062c\u062f \u0642\u064a\u0645\u0647 \u0647\u0645\u0632\u0647 \u0642\u064a\u0645\u0647 \u0627\u0648\u062c\u062f \u0642\u064a\u0645\u0647\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:00:44"
+        },
+        "timestamp": "2026-07-24 15:00:44"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-24 15:00:47"
+        },
+        "timestamp": "2026-07-24 15:00:47"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "MIC_DENIED",
+            "details": "\u0644\u0645 \u064a\u062a\u0645 \u0625\u0639\u0637\u0627\u0621 \u0635\u0644\u0627\u062d\u064a\u0629 \u0627\u0644\u0645\u064a\u0643\u0631\u0648\u0641\u0648\u0646 \u0623\u0648 \u0644\u0627 \u064a\u0648\u062c\u062f \u0645\u064a\u0643\u0631\u0648\u0641\u0648\u0646",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:01:52"
+        },
+        "timestamp": "2026-07-24 15:01:52"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:01:54"
+        },
+        "timestamp": "2026-07-24 15:01:54"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:01:57"
+        },
+        "timestamp": "2026-07-24 15:01:57"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 40,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-24 15:02:02"
+        },
+        "timestamp": "2026-07-24 15:02:02"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:34:55"
+        },
+        "timestamp": "2026-07-24 15:34:55"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:35:26"
+        },
+        "timestamp": "2026-07-24 15:35:26"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:35:36"
+        },
+        "timestamp": "2026-07-24 15:35:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:35:39"
+        },
+        "timestamp": "2026-07-24 15:35:39"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:35:39"
+        },
+        "timestamp": "2026-07-24 15:35:39"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:36:02"
+        },
+        "timestamp": "2026-07-24 15:36:02"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:36:02"
+        },
+        "timestamp": "2026-07-24 15:36:02"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:45:44"
+        },
+        "timestamp": "2026-07-24 15:45:44"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:45:59"
+        },
+        "timestamp": "2026-07-24 15:45:59"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:04"
+        },
+        "timestamp": "2026-07-24 15:46:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:09"
+        },
+        "timestamp": "2026-07-24 15:46:09"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:14"
+        },
+        "timestamp": "2026-07-24 15:46:14"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:19"
+        },
+        "timestamp": "2026-07-24 15:46:19"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:24"
+        },
+        "timestamp": "2026-07-24 15:46:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:46:26"
+        },
+        "timestamp": "2026-07-24 15:46:26"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:29"
+        },
+        "timestamp": "2026-07-24 15:46:29"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:46:30"
+        },
+        "timestamp": "2026-07-24 15:46:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:34"
+        },
+        "timestamp": "2026-07-24 15:46:34"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:46:34"
+        },
+        "timestamp": "2026-07-24 15:46:34"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:39"
+        },
+        "timestamp": "2026-07-24 15:46:39"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:46:42"
+        },
+        "timestamp": "2026-07-24 15:46:42"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"1 2\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:46:43"
+        },
+        "timestamp": "2026-07-24 15:46:43"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:46:44"
+        },
+        "timestamp": "2026-07-24 15:46:44"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:46:44"
+        },
+        "timestamp": "2026-07-24 15:46:44"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-24 15:46:45"
+        },
+        "timestamp": "2026-07-24 15:46:45"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:47:49"
+        },
+        "timestamp": "2026-07-24 15:47:49"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:47:54"
+        },
+        "timestamp": "2026-07-24 15:47:54"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:47:59"
+        },
+        "timestamp": "2026-07-24 15:47:59"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (1\/5) \u0628\u0633\u0628\u0628: \u0644\u0627 \u064a\u0648\u062c\u062f \u0648\u062c\u0647 \u0641\u064a \u0627\u0644\u0643\u0627\u0645\u064a\u0631\u0627",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:03"
+        },
+        "timestamp": "2026-07-24 15:48:03"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:04"
+        },
+        "timestamp": "2026-07-24 15:48:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (2\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:05"
+        },
+        "timestamp": "2026-07-24 15:48:05"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:09"
+        },
+        "timestamp": "2026-07-24 15:48:09"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"1 2\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:11"
+        },
+        "timestamp": "2026-07-24 15:48:11"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:14"
+        },
+        "timestamp": "2026-07-24 15:48:14"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" 1 2\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:18"
+        },
+        "timestamp": "2026-07-24 15:48:18"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:19"
+        },
+        "timestamp": "2026-07-24 15:48:19"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:22"
+        },
+        "timestamp": "2026-07-24 15:48:22"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0627\u0644\u0627\u0646 \u0644\u0645\u0627\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:22"
+        },
+        "timestamp": "2026-07-24 15:48:22"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (3\/5) \u0628\u0633\u0628\u0628: \u0644\u0627 \u064a\u0648\u062c\u062f \u0648\u062c\u0647 \u0641\u064a \u0627\u0644\u0643\u0627\u0645\u064a\u0631\u0627",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:24"
+        },
+        "timestamp": "2026-07-24 15:48:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:24"
+        },
+        "timestamp": "2026-07-24 15:48:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (4\/5) \u0628\u0633\u0628\u0628: \u0627\u0644\u0627\u0644\u062a\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0622\u0645\u0646",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:26"
+        },
+        "timestamp": "2026-07-24 15:48:26"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:29"
+        },
+        "timestamp": "2026-07-24 15:48:29"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:34"
+        },
+        "timestamp": "2026-07-24 15:48:34"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:39"
+        },
+        "timestamp": "2026-07-24 15:48:39"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:44"
+        },
+        "timestamp": "2026-07-24 15:48:44"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:44"
+        },
+        "timestamp": "2026-07-24 15:48:44"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"\u0648\u062d\u0627\u0644 \u0627\u0644\u0637\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:45"
+        },
+        "timestamp": "2026-07-24 15:48:45"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:47"
+        },
+        "timestamp": "2026-07-24 15:48:47"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \" \u0644\u062e\u0645\u0633 \u0645\u0631\u0627\u062a\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-24 15:48:49"
+        },
+        "timestamp": "2026-07-24 15:48:49"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-24 15:48:50"
+        },
+        "timestamp": "2026-07-24 15:48:50"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 26,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-24 15:48:50"
+        },
+        "timestamp": "2026-07-24 15:48:50"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:42:17"
+        },
+        "timestamp": "2026-07-25 15:42:17"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Blocked Keyboard Shortcut Attempt",
+            "details": "Blocked key: r",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:42:25"
+        },
+        "timestamp": "2026-07-25 15:42:25"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Blocked Keyboard Shortcut Attempt",
+            "details": "Blocked key: R",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:42:25"
+        },
+        "timestamp": "2026-07-25 15:42:25"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:42:26"
+        },
+        "timestamp": "2026-07-25 15:42:26"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:42:27"
+        },
+        "timestamp": "2026-07-25 15:42:27"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 100,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 15:44:02"
+        },
+        "timestamp": "2026-07-25 15:44:02"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 100,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 15:45:59"
+        },
+        "timestamp": "2026-07-25 15:45:59"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:49:04"
+        },
+        "timestamp": "2026-07-25 15:49:04"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Visibility Hidden",
+            "details": "Student switched tabs or minimized the browser app.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:49:11"
+        },
+        "timestamp": "2026-07-25 15:49:11"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 100,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 15:49:51"
+        },
+        "timestamp": "2026-07-25 15:49:51"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Focus Loss",
+            "details": "Tab blurred, window context switched.",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:53:26"
+        },
+        "timestamp": "2026-07-25 15:53:26"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 70,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 15:53:29"
+        },
+        "timestamp": "2026-07-25 15:53:29"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 100,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 15:57:26"
+        },
+        "timestamp": "2026-07-25 15:57:26"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 15:58:20"
+        },
+        "timestamp": "2026-07-25 15:58:20"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:58:23"
+        },
+        "timestamp": "2026-07-25 15:58:23"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 15:58:24"
+        },
+        "timestamp": "2026-07-25 15:58:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:58:26"
+        },
+        "timestamp": "2026-07-25 15:58:26"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 15:58:30"
+        },
+        "timestamp": "2026-07-25 15:58:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:58:34"
+        },
+        "timestamp": "2026-07-25 15:58:34"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 15:58:35"
+        },
+        "timestamp": "2026-07-25 15:58:35"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 15:58:37"
+        },
+        "timestamp": "2026-07-25 15:58:37"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 15:58:40"
+        },
+        "timestamp": "2026-07-25 15:58:40"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 15:58:45"
+        },
+        "timestamp": "2026-07-25 15:58:45"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 15:58:45"
+        },
+        "timestamp": "2026-07-25 15:58:45"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:22:55"
+        },
+        "timestamp": "2026-07-25 16:22:55"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u062d\u062f\u064a\u062b: \"1 2\"",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 16:22:56"
+        },
+        "timestamp": "2026-07-25 16:22:56"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 16:22:56"
+        },
+        "timestamp": "2026-07-25 16:22:56"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:00"
+        },
+        "timestamp": "2026-07-25 16:23:00"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:05"
+        },
+        "timestamp": "2026-07-25 16:23:05"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:10"
+        },
+        "timestamp": "2026-07-25 16:23:10"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:15"
+        },
+        "timestamp": "2026-07-25 16:23:15"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:20"
+        },
+        "timestamp": "2026-07-25 16:23:20"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 16:23:24"
+        },
+        "timestamp": "2026-07-25 16:23:24"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:25"
+        },
+        "timestamp": "2026-07-25 16:23:25"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:30"
+        },
+        "timestamp": "2026-07-25 16:23:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 16:23:33"
+        },
+        "timestamp": "2026-07-25 16:23:33"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:35"
+        },
+        "timestamp": "2026-07-25 16:23:35"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "Vision Warning",
+            "details": "\u062d\u0635\u0644 \u0627\u0644\u0637\u0627\u0644\u0628 \u0639\u0644\u0649 \u0625\u0646\u0630\u0627\u0631 \u0628\u0635\u0631\u064a (1\/5) \u0628\u0633\u0628\u0628: \u0644\u0645 \u064a\u062a\u0645 \u0643\u0634\u0641 \u0648\u062c\u0647 \u0627\u0644\u0637\u0627\u0644\u0628 \u0628\u0648\u0636\u0648\u062d \u0623\u0645\u0627\u0645 \u0627\u0644\u0643\u0627\u0645\u064a\u0631\u0627 \u0644\u0641\u062a\u0631\u0629 \u0637\u0648\u064a\u0644\u0629",
+            "severity": "medium",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 16:23:36"
+        },
+        "timestamp": "2026-07-25 16:23:36"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:40"
+        },
+        "timestamp": "2026-07-25 16:23:40"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:45"
+        },
+        "timestamp": "2026-07-25 16:23:45"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:50"
+        },
+        "timestamp": "2026-07-25 16:23:50"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:23:55"
+        },
+        "timestamp": "2026-07-25 16:23:55"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:00"
+        },
+        "timestamp": "2026-07-25 16:24:00"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:05"
+        },
+        "timestamp": "2026-07-25 16:24:05"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:10"
+        },
+        "timestamp": "2026-07-25 16:24:10"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:15"
+        },
+        "timestamp": "2026-07-25 16:24:15"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:20"
+        },
+        "timestamp": "2026-07-25 16:24:20"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:25"
+        },
+        "timestamp": "2026-07-25 16:24:25"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:30"
+        },
+        "timestamp": "2026-07-25 16:24:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:24:35"
+        },
+        "timestamp": "2026-07-25 16:24:35"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_violation",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "violation_type": "AUDIO_DETECTED",
+            "details": "\u062a\u0645 \u0631\u0635\u062f \u0643\u0644\u0627\u0645 \u0628\u0634\u0631\u064a \u0645\u0628\u0627\u0634\u0631 \u0648\u0642\u0631\u064a\u0628 \u0628\u0645\u062d\u064a\u0637 \u0627\u0644\u0637\u0627\u0644\u0628 (Silero VAD)",
+            "severity": "high",
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "detected_at": "2026-07-25 16:24:36"
+        },
+        "timestamp": "2026-07-25 16:24:36"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 0,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 16:24:40"
+        },
+        "timestamp": "2026-07-25 16:24:40"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 100,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 16:33:30"
+        },
+        "timestamp": "2026-07-25 16:33:30"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:39:45"
+        },
+        "timestamp": "2026-07-25 16:39:45"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:39:50"
+        },
+        "timestamp": "2026-07-25 16:39:50"
+    },
+    {
+        "queue": "proctoring_queue",
+        "payload": {
+            "action": "log_heartbeat",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "status": "online",
+            "duration_seconds": 5,
+            "detected_at": "2026-07-25 16:39:55"
+        },
+        "timestamp": "2026-07-25 16:39:55"
+    },
+    {
+        "queue": "submission_queue",
+        "payload": {
+            "action": "finish_exam",
+            "student_id": 18,
+            "exam_code": "EXAM_VL17HC",
+            "score": 0,
+            "integrity_index": 100,
+            "keystroke_stats": {
+                "avg_dwell_time": 0,
+                "avg_flight_time": 0,
+                "total_keystrokes": 0
+            },
+            "completed_at": "2026-07-25 16:39:57"
+        },
+        "timestamp": "2026-07-25 16:39:57"
+    }
+]

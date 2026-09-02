@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@plugin 'daisyui' {
+    themes: aegis --default, aegis-dark --prefersdark;
+    logs: false;
+}
+
+@source '../../app/**/*.php';
+@source '../../resources/views/**/*.blade.php';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+/* ─────────────────────────────────────────────────────────────
+   Design tokens.  Never write a hex colour outside this file.
+   Semantic names only: primary / success / warning / error / base-*.
+   ───────────────────────────────────────────────────────────── */
+
+@plugin 'daisyui/theme' {
+    name: 'aegis';
+    default: true;
+    color-scheme: light;
+
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(97% 0.005 250);
+    --color-base-300: oklch(93% 0.008 250);
+    --color-base-content: oklch(24% 0.03 255);
+
+    --color-primary: oklch(52% 0.19 262);
+    --color-primary-content: oklch(98% 0.01 262);
+    --color-secondary: oklch(56% 0.16 295);
+    --color-secondary-content: oklch(98% 0.01 295);
+    --color-accent: oklch(64% 0.14 195);
+    --color-accent-content: oklch(20% 0.03 195);
+    --color-neutral: oklch(32% 0.02 255);
+    --color-neutral-content: oklch(97% 0.005 255);
+
+    --color-info: oklch(64% 0.13 235);
+    --color-info-content: oklch(98% 0.01 235);
+    --color-success: oklch(62% 0.15 155);
+    --color-success-content: oklch(98% 0.01 155);
+    --color-warning: oklch(72% 0.16 75);
+    --color-warning-content: oklch(22% 0.04 75);
+    --color-error: oklch(58% 0.21 26);
+    --color-error-content: oklch(98% 0.01 26);
+
+    --radius-selector: 0.75rem;
+    --radius-field: 0.625rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
+
+@plugin 'daisyui/theme' {
+    name: 'aegis-dark';
+    prefersdark: true;
+    color-scheme: dark;
+
+    --color-base-100: oklch(21% 0.025 258);
+    --color-base-200: oklch(18% 0.025 258);
+    --color-base-300: oklch(15% 0.025 258);
+    --color-base-content: oklch(93% 0.01 258);
+
+    --color-primary: oklch(66% 0.17 262);
+    --color-primary-content: oklch(16% 0.03 262);
+    --color-secondary: oklch(68% 0.15 295);
+    --color-secondary-content: oklch(16% 0.03 295);
+    --color-accent: oklch(72% 0.13 195);
+    --color-accent-content: oklch(16% 0.03 195);
+    --color-neutral: oklch(28% 0.02 258);
+    --color-neutral-content: oklch(93% 0.01 258);
+
+    --color-info: oklch(70% 0.12 235);
+    --color-info-content: oklch(16% 0.03 235);
+    --color-success: oklch(70% 0.14 155);
+    --color-success-content: oklch(16% 0.03 155);
+    --color-warning: oklch(78% 0.15 75);
+    --color-warning-content: oklch(18% 0.04 75);
+    --color-error: oklch(66% 0.19 26);
+    --color-error-content: oklch(16% 0.03 26);
+
+    --radius-selector: 0.75rem;
+    --radius-field: 0.625rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
+
+@theme {
+    --font-sans: 'Cairo', ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Base
+   ───────────────────────────────────────────────────────────── */
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-base-200 text-base-content font-sans antialiased;
+    }
+
+    /* Latin/number runs inside Arabic text keep their own direction. */
+    .numeric {
+        font-family: 'Outfit', var(--font-sans);
+        font-variant-numeric: tabular-nums;
+        direction: ltr;
+        unicode-bidi: isolate;
+    }
+
+    :focus-visible {
+        @apply outline-primary outline-2 outline-offset-2;
+    }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Component utilities.  Anything reused three times lands here or,
+   better, becomes a Blade component in views/components/ui/.
+   ───────────────────────────────────────────────────────────── */
+
+@layer components {
+    .surface {
+        @apply bg-base-100 border-base-300 rounded-box border shadow-sm;
+    }
+
+    .surface-muted {
+        @apply bg-base-200/60 border-base-300 rounded-box border;
+    }
+
+    /* Frosted panel used by the exam runner overlays and the auth screens. */
+    .glass {
+        @apply bg-base-100/70 border-base-100/40 rounded-box border shadow-lg backdrop-blur-xl;
+    }
+
+    .section-title {
+        @apply text-base-content/90 text-lg font-bold;
+    }
+
+    .muted {
+        @apply text-base-content/60 text-sm;
+    }
+
+    /* Integrity meter, shared by dashboards and the proctoring console. */
+    .integrity-bar {
+        @apply bg-base-300 h-2 w-full overflow-hidden rounded-full;
+    }
+
+    .integrity-bar > span {
+        @apply block h-full rounded-full transition-[width] duration-500 ease-out;
+    }
+}
+
+@layer utilities {
+    .animate-in {
+        animation: aegis-fade-up 0.35s ease-out both;
+    }
+
+    .shimmer {
+        background: linear-gradient(
+            90deg,
+            transparent,
+            color-mix(in oklch, var(--color-base-content) 8%, transparent),
+            transparent
+        );
+        background-size: 200% 100%;
+        animation: aegis-shimmer 1.4s infinite;
+    }
+}
+
+@keyframes aegis-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(0.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes aegis-shimmer {
+    from {
+        background-position: 200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

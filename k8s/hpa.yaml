@@ -1,0 +1,56 @@
+# ═══════════════════════════════════════════════════════════════════
+#  Aegis-X — HorizontalPodAutoscaler
+#  Triggers: CPU ≥ 70%  |  Min: 3  |  Max: 50 pods
+# ═══════════════════════════════════════════════════════════════════
+
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: aegis-app-hpa
+  namespace: aegis
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: aegis-app
+
+  minReplicas: 3
+  maxReplicas: 50
+
+  metrics:
+    # ── CPU-based scaling (primary trigger) ──────────────────────────
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70     # Scale OUT when avg CPU > 70%
+
+    # ── Memory-based scaling (secondary) ─────────────────────────────
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: Utilization
+          averageUtilization: 80
+
+  behavior:
+    # ── Scale OUT (fast — exam starts, 50k students pile in) ──────────
+    scaleUp:
+      stabilizationWindowSeconds: 30    # React quickly
+      policies:
+        - type: Pods
+          value: 10                      # Add up to 10 pods per interval
+          periodSeconds: 30
+        - type: Percent
+          value: 100                     # Or double current count
+          periodSeconds: 30
+      selectPolicy: Max                  # Pick the more aggressive policy
+
+    # ── Scale IN (slow — avoid flapping after exam ends) ──────────────
+    scaleDown:
+      stabilizationWindowSeconds: 300   # Wait 5 min before scaling down
+      policies:
+        - type: Pods
+          value: 2                       # Remove at most 2 pods per interval
+          periodSeconds: 120
