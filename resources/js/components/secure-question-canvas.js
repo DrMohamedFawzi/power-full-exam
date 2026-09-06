@@ -88,6 +88,7 @@ export function initAntiCameraShield(containerId = 'question-container') {
     let targetY = container.offsetHeight / 2;
     let currentX = targetX;
     let currentY = targetY;
+    let isAnimating = false;
 
     overlay.style.cssText = `
         position: absolute;
@@ -103,28 +104,46 @@ export function initAntiCameraShield(containerId = 'question-container') {
         transition: opacity 0.3s ease;
     `;
 
+    // Set initial position
+    overlay.style.setProperty('--x', `${currentX}px`);
+    overlay.style.setProperty('--y', `${currentY}px`);
+
     function updateTargetPos(clientX, clientY) {
         const rect = container.getBoundingClientRect();
         targetX = clientX - rect.left;
         targetY = clientY - rect.top;
+        startAnimationIfNeeded();
     }
 
-    container.onmousemove = (e) => updateTargetPos(e.clientX, e.clientY);
-    container.ontouchstart = (e) => { if (e.touches.length > 0) updateTargetPos(e.touches[0].clientX, e.touches[0].clientY); };
-    container.ontouchmove = (e) => { if (e.touches.length > 0) updateTargetPos(e.touches[0].clientX, e.touches[0].clientY); };
+    // Passive event-driven animation — only runs rAF when user is interacting
+    function startAnimationIfNeeded() {
+        if (isAnimating) return;
+        isAnimating = true;
+        animateSpotlight();
+    }
 
-    if (animationFrameId) cancelAnimationFrame(animationFrameId);
-
-    function updateSpotlight() {
+    function animateSpotlight() {
         currentX += (targetX - currentX) * 0.35;
         currentY += (targetY - currentY) * 0.35;
 
         overlay.style.setProperty('--x', `${currentX}px`);
         overlay.style.setProperty('--y', `${currentY}px`);
 
-        animationFrameId = requestAnimationFrame(updateSpotlight);
+        // Stop animation when settled (within 0.5px of target)
+        const dx = Math.abs(targetX - currentX);
+        const dy = Math.abs(targetY - currentY);
+        if (dx < 0.5 && dy < 0.5) {
+            isAnimating = false;
+            return;
+        }
+
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        animationFrameId = requestAnimationFrame(animateSpotlight);
     }
-    updateSpotlight();
+
+    container.onmousemove = (e) => updateTargetPos(e.clientX, e.clientY);
+    container.ontouchstart = (e) => { if (e.touches.length > 0) updateTargetPos(e.touches[0].clientX, e.touches[0].clientY); };
+    container.ontouchmove = (e) => { if (e.touches.length > 0) updateTargetPos(e.touches[0].clientX, e.touches[0].clientY); };
 }
 
 /**

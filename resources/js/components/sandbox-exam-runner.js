@@ -36,6 +36,7 @@ export default (payload) => ({
     gracePeriodActive: true,
     monitorInstances: [],
     timers: [],
+    visionMonitorInstance: null,
     
     // Offline Time Freeze System (3 chances x 10 minutes)
     isOfflineFrozen: false,
@@ -45,10 +46,10 @@ export default (payload) => ({
     freezeTimerId: null,
     examTimerId: null,
     
-    // Face Match Preflight
-    preflightModalOpen: Boolean(payload.session.face_verification_required),
-    faceMatched: !payload.session.face_verification_required,
-    preflightStatusText: payload.session.face_verification_required ? '🔍 جاري مسح ومطابقة الوجه أمام الكاميرا...' : '✅ جاهز للبدء',
+    // Mandatory Fullscreen Mode Gate (Face matching is completed once at instructions gateway)
+    fullscreenModalOpen: !Boolean(document.fullscreenElement),
+    faceMatched: true,
+    preflightModalOpen: false,
     
     // Post-Exam Result & Survey
     score: 0,
@@ -86,76 +87,30 @@ export default (payload) => ({
             this.pushViolation('devtools_opened', 'فتح أدوات المطورين (DevTools / Inspect Element) محظور!');
         });
 
-        if (this.session.face_verification_required) {
-            this.initPreflightFaceCheck();
-        } else {
+        // If already in fullscreen, start directly; otherwise wait for click to enter fullscreen
+        if (document.fullscreenElement) {
+            this.fullscreenModalOpen = false;
             this.startExam();
         }
     },
 
-    initPreflightFaceCheck() {
-        this.faceMatched = false;
-        this.preflightStatusText = '⏳ جاري تحميل نماذج الذكاء الاصطناعي للمطابقة...';
-
-        const bypassTimer = setTimeout(() => {
-            if (!this.faceMatched && this.preflightModalOpen) {
-                this.faceMatched = true;
-                this.preflightStatusText = '⚠️ تعذّرت مطابقة الوجه (انتهت المهلة) — تم السماح بالدخول';
+    enterFullscreenAndStart() {
+        this.fullscreenModalOpen = false;
+        try {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen().catch(() => {});
             }
-        }, 15_000);
-
-        const visionMonitor = createVisionMonitor({
-            onModelsLoaded: () => {
-                if (this.preflightModalOpen && !this.faceMatched) {
-                    this.preflightStatusText = '🔍 جاري مسح ومطابقة الوجه أمام الكاميرا...';
-                }
-            },
-            onViolation: (type, details) => {
-                if (this.preflightModalOpen) {
-                    this.faceMatched = false;
-                    if (type === 'camera_denied') {
-                        this.preflightStatusText = '⚠️ تعذّر الوصول للكاميرا — سيتم السماح بالدخول بعد 3 ثوانٍ...';
-                        setTimeout(() => {
-                            clearTimeout(bypassTimer);
-                            if (this.preflightModalOpen) {
-                                this.faceMatched = true;
-                                this.preflightStatusText = '⚠️ تم الدخول بدون كاميرا (وضع المحاكاة)';
-                            }
-                        }, 3000);
-                    } else if (type === 'face_missing') {
-                        this.preflightStatusText = '🔍 لم يتم العثور على وجه، يرجى التموضع أمام الكاميرا';
-                    } else if (type === 'multiple_faces') {
-                        this.preflightStatusText = '⚠️ تم كشف أكثر من شخص أمام الكاميرا!';
-                    }
-                } else {
-                    this.pushViolation(type, details);
-                }
-            },
-            onFaceMatch: (matched) => {
-                if (this.preflightModalOpen) {
-                    this.faceMatched = Boolean(matched);
-                    if (matched) {
-                        clearTimeout(bypassTimer);
-                        this.preflightStatusText = '✅ تم التحقق وتطابق الهوية بنجاح (100% Match)';
-                    } else {
-                        this.preflightStatusText = '🔍 لم يتم العثور على وجه، يرجى التموضع مباشرة أمام الكاميرا';
-                    }
-                }
-            },
-            approvedDescriptor: this.session.face_descriptor || null,
-        });
-
-        visionMonitor.start();
-        this.monitorInstances.push(visionMonitor);
+        } catch {}
+        this.startExam();
     },
 
     startExam() {
-        if (!this.faceMatched) return;
+        this.fullscreenModalOpen = false;
         this.preflightModalOpen = false;
         this.examStarted = true;
         this.gracePeriodActive = true;
 
-        if (document.documentElement.requestFullscreen) {
+        if (document.documentElement.requestFullscreen && !document.fullscreenElement) {
             document.documentElement.requestFullscreen().catch(() => {});
         }
 
@@ -208,20 +163,30 @@ export default (payload) => ({
             keystroke: () => createKeystrokeMonitor({
                 onSample: (intervals) => this.pushViolation('keystroke_anomaly', null, { intervals }),
             }),
-            vision: () => createVisionMonitor({
-                onViolation,
-                approvedDescriptor: this.session.face_descriptor,
-            }),
             audio: () => createAudioMonitor({ onViolation }),
             'ios-block': () => createIosBlockMonitor({ onViolation }),
         };
 
-        const monitorNames = ['visibility', 'fullscreen', 'copy-paste', 'devtools', 'vision', 'audio', 'multi-display'];
-        this.monitorInstances = monitorNames
+        // Reuse existing vision monitor from preflight (if any) — never create a duplicate
+        const monitorNames = ['visibility', 'fullscreen', 'copy-paste', 'devtools', 'audio', 'multi-display'];
+        const newMonitors = monitorNames
             .filter((name) => factories[name])
             .map((name) => factories[name]());
 
-        this.monitorInstances.forEach((monitor) => {
+        // If no vision monitor was started in preflight, create one now
+        if (!this.visionMonitorInstance) {
+            const visionMon = createVisionMonitor({
+                onViolation,
+                approvedDescriptor: this.session.face_descriptor,
+            });
+            this.visionMonitorInstance = visionMon;
+            newMonitors.push(visionMon);
+        }
+
+        // Merge with any pre-existing monitors (e.g. preflight vision)
+        this.monitorInstances = [...this.monitorInstances, ...newMonitors];
+
+        newMonitors.forEach((monitor) => {
             try {
                 monitor.start();
             } catch (err) {
@@ -319,8 +284,8 @@ export default (payload) => ({
             return;
         }
 
-        if (type === 'visibility_lost' || type === 'tab_switched' || type === 'screenshot_attempt' || type === 'fullscreen_exit') {
-            this.triggerExitBlackout(details || 'محاولة الخروج أو تصوير الشاشة محظورة');
+        if (type === 'visibility_lost' || type === 'tab_switched' || type === 'tab_switch' || type === 'window_blur' || type === 'screenshot_attempt' || type === 'fullscreen_exit') {
+            this.triggerExitBlackout(details || 'محاولة الخروج من ملء الشاشة أو تصويرها محظورة');
             return;
         }
 
@@ -336,6 +301,14 @@ export default (payload) => ({
             face_missing: '⚠️ لم يتم العثور على وجهك أمام الكاميرا! يرجى النظر باتجاه الشاشة.',
             multiple_faces: '⚠️ تم كشف وجود أكثر من شخص أمام الكاميرا!',
             gaze_away: '⚠️ يرجى النظر مباشرة إلى الشاشة وعدم الالتفات جانبياً.',
+            fullscreen_exit: '⚠️ الخروج من وضع ملء الشاشة محظور أثناء الاختبار!',
+            tab_switch: '⚠️ يمنع التبديل بين النوافذ والتبويبات أثناء الاختبار!',
+            tab_switched: '⚠️ يمنع التبديل بين النوافذ والتبويبات أثناء الاختبار!',
+            window_blur: '⚠️ فقدان تركيز نافذة الاختبار محظور!',
+            visibility_lost: '⚠️ تم كشف الخروج من تبويب الاختبار! تم تسجيل المخالفة.',
+            copy_attempt: '⚠️ محاولة نسخ نصوص الامتحان محظورة!',
+            paste_attempt: '⚠️ محاولة إلصاق نصوص خارجية محظورة!',
+            screenshot_attempt: '⚠️ محاولة التقاط صورة لشاشة الامتحان محظورة!',
             devtools_opened: '⚠️ يمنع فتح أدوات المطورين (DevTools).',
             devtools_shortcut: '⚠️ استخدام اختصارات أدوات الفحص محظور!',
         };
@@ -364,10 +337,6 @@ export default (payload) => ({
                 this.blackoutTimer -= 1;
                 if (this.blackoutTimer <= 0) {
                     clearInterval(timer);
-                    this.blackoutActive = false;
-                    if (document.documentElement.requestFullscreen) {
-                        document.documentElement.requestFullscreen().catch(() => {});
-                    }
                 }
             }, 1000);
         } else {

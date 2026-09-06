@@ -1,7 +1,3 @@
-/**
- * Aegis-X Vision Proctoring Engine - High-Performance AI Neural Network
- * Optimized with TinyFaceDetector for 10x faster execution & zero CPU lag.
- */
 export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, approvedDescriptor }) {
     let stream = null;
     let video = null;
@@ -10,9 +6,21 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
     let isCooldown = false;
     const COOLDOWN_MS = 3000;
     const MODELS_URL = 'https://cdn.jsdelivr.net/npm/@vladmandic/face-api/model';
+    const MATCH_THRESHOLD = 0.6; // euclidean distance threshold for face match
 
     // Cached DOM Elements
     let pipWidget = null;
+
+    // Parse approvedDescriptor into Float32Array for comparison
+    let approvedDesc = null;
+    if (approvedDescriptor) {
+        try {
+            const arr = Array.isArray(approvedDescriptor) ? approvedDescriptor : JSON.parse(approvedDescriptor);
+            approvedDesc = new Float32Array(arr);
+        } catch {
+            approvedDesc = null;
+        }
+    }
 
     function triggerViolation(type, reason) {
         if (isCooldown) return;
@@ -28,13 +36,19 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
             return false;
         }
         try {
-            // Load lightweight TinyFaceDetector & 68-Landmarks (10x faster than MobileNet)
-            await Promise.all([
+            const modelsToLoad = [
                 faceapi.nets.tinyFaceDetector.loadFromUri(MODELS_URL),
                 faceapi.nets.faceLandmark68Net.loadFromUri(MODELS_URL),
-            ]);
+            ];
+
+            // Load face recognition model only when identity matching is needed
+            if (approvedDesc) {
+                modelsToLoad.push(faceapi.nets.faceRecognitionNet.loadFromUri(MODELS_URL));
+            }
+
+            await Promise.all(modelsToLoad);
             modelsLoaded = true;
-            console.log('[Aegis Vision] Optimized AI models loaded.');
+            console.log('[Aegis Vision] AI models loaded' + (approvedDesc ? ' (with recognition).' : '.'));
             onModelsLoaded?.();
             return true;
         } catch (e) {
@@ -43,13 +57,29 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
         }
     }
 
+    function euclideanDistance(desc1, desc2) {
+        if (!desc1 || !desc2 || desc1.length !== desc2.length) return Infinity;
+        let sum = 0;
+        for (let i = 0; i < desc1.length; i++) {
+            const diff = desc1[i] - desc2[i];
+            sum += diff * diff;
+        }
+        return Math.sqrt(sum);
+    }
+
     async function runDetectionLoop(pipCanvas, pipCtx) {
         if (!video || video.readyState < 2 || !modelsLoaded) return;
 
-        // Optimized Tiny Face Detection (224px input = 10x speedup)
-        const detections = await faceapi
+        // Build detection chain — add descriptor computation when identity matching is active
+        let detectionChain = faceapi
             .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions({ inputSize: 224, scoreThreshold: 0.4 }))
             .withFaceLandmarks();
+
+        if (approvedDesc) {
+            detectionChain = detectionChain.withFaceDescriptors();
+        }
+
+        const detections = await detectionChain;
 
         pipCtx.clearRect(0, 0, pipCanvas.width, pipCanvas.height);
 
@@ -61,7 +91,7 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
 
         // No face detected
         if (!detections || detections.length === 0) {
-            onFaceMatch(false);
+            onFaceMatch?.(false);
 
             pipCtx.save();
             pipCtx.beginPath();
@@ -75,6 +105,11 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
             if (pipWidget) pipWidget.style.borderColor = '#ef4444';
             triggerViolation('face_missing', 'لم يتم العثور على وجه أمام الكاميرا');
             return;
+        }
+
+        // Multiple faces detected
+        if (detections.length > 1) {
+            triggerViolation('multiple_faces', 'تم كشف أكثر من شخص أمام الكاميرا!');
         }
 
         const detection = detections[0];
@@ -124,10 +159,20 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
         if (pipWidget) pipWidget.style.borderColor = isOutside ? '#eab308' : '#10b981';
 
         if (isOutside) {
-            onFaceMatch(false);
+            onFaceMatch?.(false);
             triggerViolation('head_motion', 'حركة خارج النطاق المسموح به (الدائرة). يرجى العودة لمنتصف الكاميرا!');
+        } else if (approvedDesc && detection.descriptor) {
+            // Real identity match using face descriptor comparison
+            const dist = euclideanDistance(detection.descriptor, approvedDesc);
+            const isIdentityMatch = dist < MATCH_THRESHOLD;
+            onFaceMatch?.(isIdentityMatch);
+
+            if (!isIdentityMatch) {
+                triggerViolation('identity_mismatch', `عدم تطابق الهوية مع الصورة المعتمدة (المسافة: ${dist.toFixed(2)})`);
+            }
         } else {
-            onFaceMatch(true);
+            // No approved descriptor — position-based match only (sandbox mode)
+            onFaceMatch?.(true);
         }
     }
 
@@ -172,16 +217,21 @@ export function createVisionMonitor({ onViolation, onFaceMatch, onModelsLoaded, 
                 const pipCtx = pipCanvas ? pipCanvas.getContext('2d', { willReadFrequently: true }) : null;
                 if (!pipCtx) return;
 
-                // Throttled 500ms loop for smooth 60fps UI performance
+                let isDetecting = false;
+                // High-precision 400ms AI loop with concurrency guard
                 timer = window.setInterval(async () => {
+                    if (isDetecting) return;
+                    isDetecting = true;
                     try {
                         await runDetectionLoop(pipCanvas, pipCtx);
                     } catch (e) {
                         console.warn('[Aegis Vision] Detection frame error:', e);
+                    } finally {
+                        isDetecting = false;
                     }
-                }, 500);
+                }, 400);
 
-                console.log('[Aegis Vision] Optimized Vision monitor active.');
+                console.log('[Aegis Vision] High-precision Vision monitor active (400ms).');
 
             } catch (e) {
                 console.error('[Aegis Vision] start() error:', e);

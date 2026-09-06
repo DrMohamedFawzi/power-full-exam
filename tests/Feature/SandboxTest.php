@@ -35,7 +35,7 @@ final class SandboxTest extends TestCase
         $response = $this->get(route('sandbox.student.exam', ['face_match' => 1]));
 
         $response->assertStatus(200);
-        $response->assertSee('اختبار النظام فائق الحماية');
+        $response->assertSee('اختبار تجريبي');
         $response->assertSee('Offline Freeze');
         $response->assertSee('sandboxExamRunner');
     }

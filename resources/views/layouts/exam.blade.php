@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; worker-src 'self' blob: data: https:; child-src 'self' blob: data: https:; img-src 'self' data: blob: https:; connect-src 'self' blob: data: https:;">
+    @if(app()->isProduction())
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; worker-src 'self' blob: data: https:; child-src 'self' blob: data: https:; img-src 'self' data: blob: https:; connect-src 'self' blob: data: https:; style-src 'self' 'unsafe-inline' https:;">
+    @endif
     <meta name="robots" content="noindex, nofollow">
     <title>@yield('title', $title ?? 'جلسة اختبار') — {{ config('app.name') }}</title>
     <!-- Face-API.js AI Face Detection Library (required for live proctoring) -->
@@ -54,13 +56,12 @@
                 }
             }, true);
 
-            // 2. High-Frequency DevTools Debugger Trap
+            // 2. Lightweight DevTools Detection (no debugger — avoids blocking the main thread)
             let devtoolsOpen = false;
             setInterval(function() {
-                const startTime = performance.now();
-                (function() {}['constructor']('debugger')());
-                const endTime = performance.now();
-                if (endTime - startTime > 100) {
+                const widthGap = window.outerWidth - window.innerWidth;
+                const heightGap = window.outerHeight - window.innerHeight;
+                if (widthGap > 160 || heightGap > 160) {
                     if (!devtoolsOpen) {
                         devtoolsOpen = true;
                         console.warn('🚨 DevTools Inspect Detected!');
@@ -71,7 +72,7 @@
                 } else {
                     devtoolsOpen = false;
                 }
-            }, 1000);
+            }, 2000);
         })();
     </script>
 </body>

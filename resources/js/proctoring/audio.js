@@ -103,7 +103,7 @@ export function createAudioMonitor({ onViolation }) {
 
                 initSpeechKeywordDetector();
 
-                // High-Sensitivity 40ms Loop (25 FPS)
+                // Responsive 60ms Audio VAD Loop
                 timer = window.setInterval(() => {
                     if (!analyser) return;
 
@@ -125,14 +125,13 @@ export function createAudioMonitor({ onViolation }) {
                     }
                     const avgFreq = freqSum / dataArray.length;
 
-                    // Hyper-Sensitive Volume Scaling: Max scaling denominator lowered from 24 to 8!
-                    // Any soft speech near device (maxDev >= 2) immediately animates meter!
+                    // Hyper-Sensitive Volume Scaling (animates immediately when speaking)
                     let volumePct = 0;
                     if (maxDev >= 2) {
                         volumePct = Math.min(100, Math.round((maxDev / 8) * 100));
                     }
 
-                    // Update UI Meter Live
+                    // Live UI Meter Update on every tick (60ms)
                     if (!vadBarEl) vadBarEl = document.getElementById('audio-vad-bar');
                     if (vadBarEl) {
                         vadBarEl.style.width = volumePct + '%';
@@ -145,13 +144,13 @@ export function createAudioMonitor({ onViolation }) {
                         }
                     }
 
-                    // Hyper-Sensitive Speech Detection Condition (volumePct >= 18)
+                    // Speech Detection Condition (volumePct >= 18 and human voice frequencies)
                     const isSpeaking = volumePct >= 18 && avgFreq >= 5;
                     const now = Date.now();
 
                     if (isSpeaking) {
                         speechAccumulator += 1;
-                        if (speechAccumulator >= 2 && (now - lastViolationTime > AUDIO_COOLDOWN_MS)) {
+                        if (speechAccumulator >= 3 && (now - lastViolationTime > AUDIO_COOLDOWN_MS)) {
                             lastViolationTime = now;
                             speechAccumulator = 0;
                             onViolation(
@@ -162,9 +161,9 @@ export function createAudioMonitor({ onViolation }) {
                     } else {
                         speechAccumulator = Math.max(0, speechAccumulator - 1);
                     }
-                }, 40);
+                }, 60);
 
-                console.log('[Aegis Audio] Hyper-Sensitive Audio Monitor v5.2 active.');
+                console.log('[Aegis Audio] Hyper-Sensitive Audio Monitor v5.2 active (60ms).');
 
             } catch (err) {
                 console.warn('[Aegis Audio] Mic init error:', err);
